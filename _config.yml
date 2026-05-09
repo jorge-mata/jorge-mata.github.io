@@ -1,7 +1,3 @@
 layout: page
-title: "test"
-permalink: /test
-
-layout: page
-title: "test2"
-permalink: /test2
+title: "Title"
+permalink: /title

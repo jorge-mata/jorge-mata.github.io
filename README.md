@@ -2,4 +2,4 @@
 Jorge Mata's Site
 
 Test site
-[URL](https://jorge-mata.github.io/test)
+[URL](/test)
