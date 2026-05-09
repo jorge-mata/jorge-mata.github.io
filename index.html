@@ -3,26 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>Photography Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Welcome</h1>
-        </nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Photography</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Capturing Moments</h1>
+            <p>Professional Photography Portfolio</p>
+            <a href="portfolio.html" class="cta-button">View My Work</a>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Hello World</h2>
-            <p>This is a static HTML/CSS/JS site.</p>
-            <button id="myButton">Click me</button>
+        <section class="featured">
+            <h2>Featured Work</h2>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <img src="img/pics/photo1.jpg" alt="Featured photo 1">
+                    <h3>Landscape</h3>
+                </div>
+                <div class="featured-item">
+                    <img src="img/pics/photo2.jpg" alt="Featured photo 2">
+                    <h3>Portrait</h3>
+                </div>
+                <div class="featured-item">
+                    <img src="img/pics/photo3.jpg" alt="Featured photo 3">
+                    <h3>Nature</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to work together?</h2>
+            <p>Get in touch to discuss your photography needs</p>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026. All rights reserved.</p>
+        <p>&copy; 2026 Photography Portfolio. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>

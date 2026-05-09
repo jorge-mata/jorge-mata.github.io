@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Photography</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Photography</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="page-header">
+            <h1>My Portfolio</h1>
+            <p>A collection of my best work</p>
+        </div>
+
+        <section class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="landscape">Landscape</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="portfolio-item" data-category="landscape">
+                <img src="img/pics/photo1.jpg" alt="Landscape photo">
+                <div class="portfolio-overlay">
+                    <h3>Landscape</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="portrait">
+                <img src="img/pics/photo2.jpg" alt="Portrait photo">
+                <div class="portfolio-overlay">
+                    <h3>Portrait</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="nature">
+                <img src="img/pics/photo3.jpg" alt="Nature photo">
+                <div class="portfolio-overlay">
+                    <h3>Nature</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="landscape">
+                <img src="img/pics/photo4.jpg" alt="Landscape photo">
+                <div class="portfolio-overlay">
+                    <h3>Landscape</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="portrait">
+                <img src="img/pics/photo5.jpg" alt="Portrait photo">
+                <div class="portfolio-overlay">
+                    <h3>Portrait</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="nature">
+                <img src="img/pics/photo6.jpg" alt="Nature photo">
+                <div class="portfolio-overlay">
+                    <h3>Nature</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Photography Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
