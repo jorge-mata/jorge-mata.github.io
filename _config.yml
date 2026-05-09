@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: Jorge's homepage
 description: Bookmark this to keep an eye on my project updates!
+
+layout: page
+title: "test"
+permalink: /test
