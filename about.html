@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Jorge Mata</title>
+  <meta name="description" content="Jorge Carlos Mata Pacheco is a Computer Science graduate from Tec de Monterrey with experience in full-stack development, cloud infrastructure, and data analytics." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-base text-slate-200 font-sans antialiased overflow-x-hidden">
+  <div id="loader"><span class="font-display text-2xl text-gradient">JM.</span></div>
+  <div class="grain"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-base/70 border-b border-line/60">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="font-display text-xl font-semibold tracking-tight">Jorge<span class="text-gradient">Mata</span></a>
+
+      <nav id="navLinks" class="relative hidden md:flex items-center gap-10">
+        <a href="index.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">Home</a>
+        <a href="about.html" class="nav-link is-active relative text-sm font-medium text-slate-100">About</a>
+        <a href="portfolio.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">Work</a>
+        <a href="contact.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">Contact</a>
+        <span id="navIndicator" class="nav-indicator"></span>
+      </nav>
+
+      <a href="contact.html" class="snake-btn magnetic hidden md:inline-flex items-center rounded-full border border-line px-5 py-2 text-sm font-medium hover:border-accent/60 hover:text-accent transition-colors">
+        Let's talk
+      </a>
+
+      <button id="navToggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden text-slate-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <nav id="navMenu" class="hidden md:hidden flex-col gap-1 px-6 pb-6 bg-base/95 border-b border-line/60">
+      <a href="index.html" class="nav-link py-3 text-slate-400 border-b border-line/40">Home</a>
+      <a href="about.html" class="nav-link py-3 text-slate-100 border-b border-line/40">About</a>
+      <a href="portfolio.html" class="nav-link py-3 text-slate-400 border-b border-line/40">Work</a>
+      <a href="contact.html" class="nav-link py-3 text-slate-400">Contact</a>
+    </nav>
+  </header>
+
+  <main class="pt-40 pb-28">
+    <section class="max-w-6xl mx-auto px-6">
+      <p class="eyebrow text-sm font-medium tracking-widest uppercase text-accent mb-4">About me</p>
+      <h1 data-split class="font-display font-semibold text-5xl sm:text-6xl text-slate-50 max-w-3xl leading-tight">
+        Computer Science graduate solving real problems with code.
+      </h1>
+    </section>
+
+    <!-- Bio -->
+    <section class="max-w-6xl mx-auto px-6 mt-24 grid lg:grid-cols-5 gap-14 items-start">
+      <div class="lg:col-span-2 reveal">
+        <div class="tilt-card aspect-square rounded-3xl border border-line bg-gradient-to-br from-primary/25 via-surface to-accent/15 flex items-center justify-center">
+          <span class="font-display text-7xl font-semibold text-gradient">JM</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3 reveal">
+        <h2 class="font-display text-2xl font-semibold text-slate-50 mb-4">Hi, I'm Jorge — nice to meet you.</h2>
+        <p class="text-slate-400 leading-relaxed mb-4">
+          I'm a Computer Science graduate from Tecnológico de Monterrey who combines strong technical skills with
+          innovative problem-solving abilities. I'm proficient in multiple programming languages, including Python,
+          C++, and Java, which I use for developing software, cloud-based solutions, and web applications.
+        </p>
+        <p class="text-slate-400 leading-relaxed mb-8">
+          I actively pursue knowledge in new and emerging technologies in order to bring the best possible solution
+          to complex business challenges — whether that's a full-stack web app, a cloud-integrated chatbot, a
+          machine learning dashboard, or an interactive 3D simulation built in Unity and Unreal Engine.
+        </p>
+
+        <ul class="grid sm:grid-cols-2 gap-3">
+          <li class="flex items-center gap-3 text-sm text-slate-300"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Full-Stack Development</li>
+          <li class="flex items-center gap-3 text-sm text-slate-300"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Cloud Infrastructure</li>
+          <li class="flex items-center gap-3 text-sm text-slate-300"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Data Analytics & Machine Learning</li>
+          <li class="flex items-center gap-3 text-sm text-slate-300"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Agile Methodologies</li>
+          <li class="flex items-center gap-3 text-sm text-slate-300"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Game Development (Unity / Unreal Engine)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="max-w-6xl mx-auto px-6 mt-28">
+      <div class="reveal-stagger grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div class="rounded-2xl border border-line bg-surface/60 py-8">
+          <p class="font-display text-4xl font-semibold text-gradient"><span data-count="2">0</span>+</p>
+          <p class="text-sm text-slate-400 mt-2">Languages spoken</p>
+        </div>
+        <div class="rounded-2xl border border-line bg-surface/60 py-8">
+          <p class="font-display text-4xl font-semibold text-gradient"><span data-count="3">0</span>+</p>
+          <p class="text-sm text-slate-400 mt-2">Core languages (Python, C++, Java)</p>
+        </div>
+        <div class="rounded-2xl border border-line bg-surface/60 py-8">
+          <p class="font-display text-4xl font-semibold text-gradient"><span data-count="50">0</span>+</p>
+          <p class="text-sm text-slate-400 mt-2">Users supported (IT internship)</p>
+        </div>
+        <div class="rounded-2xl border border-line bg-surface/60 py-8">
+          <p class="font-display text-4xl font-semibold text-gradient"><span data-count="6">0</span>+</p>
+          <p class="text-sm text-slate-400 mt-2">Projects delivered</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="max-w-6xl mx-auto px-6 mt-28">
+      <p class="eyebrow text-sm font-medium tracking-widest uppercase text-accent mb-4">Skills</p>
+      <h2 class="reveal font-display text-3xl sm:text-4xl font-semibold text-slate-50 mb-14">What I work with day to day.</h2>
+
+      <div class="reveal-stagger grid sm:grid-cols-2 gap-x-12 gap-y-8">
+        <div>
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium text-slate-200">Python</span><span class="text-slate-500">90%</span></div>
+          <div class="h-1.5 rounded-full bg-line overflow-hidden"><div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-primary to-accent" data-percent="90"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium text-slate-200">JavaScript / Web Development</span><span class="text-slate-500">85%</span></div>
+          <div class="h-1.5 rounded-full bg-line overflow-hidden"><div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-primary to-accent" data-percent="85"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium text-slate-200">Java & C++</span><span class="text-slate-500">80%</span></div>
+          <div class="h-1.5 rounded-full bg-line overflow-hidden"><div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-primary to-accent" data-percent="80"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium text-slate-200">Cloud Infrastructure (OCI)</span><span class="text-slate-500">78%</span></div>
+          <div class="h-1.5 rounded-full bg-line overflow-hidden"><div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-primary to-accent" data-percent="78"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium text-slate-200">Database Management & SQL</span><span class="text-slate-500">82%</span></div>
+          <div class="h-1.5 rounded-full bg-line overflow-hidden"><div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-primary to-accent" data-percent="82"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium text-slate-200">Data Analytics</span><span class="text-slate-500">76%</span></div>
+          <div class="h-1.5 rounded-full bg-line overflow-hidden"><div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-primary to-accent" data-percent="76"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium text-slate-200">Machine Learning (Scikit-learn / XGBoost)</span><span class="text-slate-500">74%</span></div>
+          <div class="h-1.5 rounded-full bg-line overflow-hidden"><div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-primary to-accent" data-percent="74"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium text-slate-200">Game Development (Unity / Unreal Engine)</span><span class="text-slate-500">70%</span></div>
+          <div class="h-1.5 rounded-full bg-line overflow-hidden"><div class="skill-bar-fill h-full rounded-full bg-gradient-to-r from-primary to-accent" data-percent="70"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="max-w-6xl mx-auto px-6 mt-28">
+      <p class="eyebrow text-sm font-medium tracking-widest uppercase text-accent mb-4">Experience</p>
+      <h2 class="reveal font-display text-3xl sm:text-4xl font-semibold text-slate-50 mb-14">A quick look at my journey.</h2>
+
+      <div class="relative pl-10">
+        <div class="absolute left-0 top-0 bottom-0 w-px bg-line">
+          <div data-timeline-track class="w-full h-full bg-gradient-to-b from-primary to-accent"></div>
+        </div>
+
+        <div class="reveal-stagger space-y-14">
+          <div class="relative">
+            <span class="absolute -left-[2.55rem] top-1 h-3 w-3 rounded-full bg-accent ring-4 ring-base"></span>
+            <p class="text-sm text-slate-500 mb-1">Present</p>
+            <h3 class="font-display text-xl font-semibold text-slate-50">Freelance Software Developer</h3>
+            <p class="text-slate-400 mt-2 max-w-2xl">Designing and developing cloud-based data management applications, integrating databases, and delivering scalable software solutions for multiple clients.</p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-[2.55rem] top-1 h-3 w-3 rounded-full bg-primary ring-4 ring-base"></span>
+            <p class="text-sm text-slate-500 mb-1">Internship</p>
+            <h3 class="font-display text-xl font-semibold text-slate-50">Cámara Nacional de Comercio, Servicios y Turismo de Monterrey</h3>
+            <p class="text-slate-400 mt-2 max-w-2xl">Developed a Python-based web application for managing room reservations and displaying SQL database event information using JavaScript and multiple libraries, while also providing IT support to over 50 users.</p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-[2.55rem] top-1 h-3 w-3 rounded-full bg-accent ring-4 ring-base"></span>
+            <p class="text-sm text-slate-500 mb-1">Coursework</p>
+            <h3 class="font-display text-xl font-semibold text-slate-50">Academic Projects</h3>
+            <p class="text-slate-400 mt-2 max-w-2xl">Applied full-stack, cloud, and data science coursework to real sponsor projects for Oracle and Lenovo, and built 3D simulations and gamified experiences in Unity and Unreal Engine.</p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-[2.55rem] top-1 h-3 w-3 rounded-full bg-accent ring-4 ring-base"></span>
+            <p class="text-sm text-slate-500 mb-1">Education</p>
+            <h3 class="font-display text-xl font-semibold text-slate-50">B.S. in Computer Science and Technology, Tec de Monterrey</h3>
+            <p class="text-slate-400 mt-2 max-w-2xl">Instituto Tecnológico y de Estudios Superiores de Monterrey, Campus Monterrey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line/60">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <p>&copy; 2026 Jorge Mata. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="magnetic hover:text-accent transition-colors">GitHub</a>
+        <a href="#" class="magnetic hover:text-accent transition-colors">LinkedIn</a>
+        <a href="mailto:jorgecmata@gmail.com" class="magnetic hover:text-accent transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

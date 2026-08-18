@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Jorge Mata</title>
+  <meta name="description" content="Get in touch with Jorge Carlos Mata Pacheco to discuss your next software project." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-base text-slate-200 font-sans antialiased overflow-x-hidden">
+  <div id="loader"><span class="font-display text-2xl text-gradient">JM.</span></div>
+  <div class="grain"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-base/70 border-b border-line/60">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="font-display text-xl font-semibold tracking-tight">Jorge<span class="text-gradient">Mata</span></a>
+
+      <nav id="navLinks" class="relative hidden md:flex items-center gap-10">
+        <a href="index.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">Home</a>
+        <a href="about.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">About</a>
+        <a href="portfolio.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">Work</a>
+        <a href="contact.html" class="nav-link is-active relative text-sm font-medium text-slate-100">Contact</a>
+        <span id="navIndicator" class="nav-indicator"></span>
+      </nav>
+
+      <a href="contact.html" class="snake-btn magnetic hidden md:inline-flex items-center rounded-full border border-line px-5 py-2 text-sm font-medium hover:border-accent/60 hover:text-accent transition-colors">
+        Let's talk
+      </a>
+
+      <button id="navToggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden text-slate-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <nav id="navMenu" class="hidden md:hidden flex-col gap-1 px-6 pb-6 bg-base/95 border-b border-line/60">
+      <a href="index.html" class="nav-link py-3 text-slate-400 border-b border-line/40">Home</a>
+      <a href="about.html" class="nav-link py-3 text-slate-400 border-b border-line/40">About</a>
+      <a href="portfolio.html" class="nav-link py-3 text-slate-400 border-b border-line/40">Work</a>
+      <a href="contact.html" class="nav-link py-3 text-slate-100">Contact</a>
+    </nav>
+  </header>
+
+  <main class="pt-40 pb-28">
+    <section class="max-w-6xl mx-auto px-6">
+      <p class="eyebrow text-sm font-medium tracking-widest uppercase text-accent mb-4">Get in touch</p>
+      <h1 data-split class="font-display font-semibold text-5xl sm:text-6xl text-slate-50 max-w-3xl leading-tight">
+        Let's talk about your next project.
+      </h1>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 mt-20 grid lg:grid-cols-5 gap-14">
+      <!-- Info -->
+      <div class="lg:col-span-2 reveal space-y-10">
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-accent mb-2">Email</h3>
+          <a href="mailto:jorgecmata@gmail.com" class="magnetic font-display text-xl text-slate-100 hover:text-accent transition-colors">jorgecmata@gmail.com</a>
+        </div>
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-accent mb-2">Phone</h3>
+          <a href="tel:+528661540090" class="magnetic font-display text-xl text-slate-100 hover:text-accent transition-colors">+52 866 154-0090</a>
+        </div>
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-accent mb-2">Location</h3>
+          <p class="font-display text-xl text-slate-100">Monterrey, NL, México</p>
+        </div>
+        <div>
+          <h3 class="text-xs uppercase tracking-widest text-accent mb-2">Follow</h3>
+          <div class="flex gap-4 mt-2">
+            <a href="#" class="magnetic rounded-full border border-line px-4 py-2 text-sm hover:border-accent/60 hover:text-accent transition-colors">GitHub</a>
+            <a href="#" class="magnetic rounded-full border border-line px-4 py-2 text-sm hover:border-accent/60 hover:text-accent transition-colors">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="contactForm" class="lg:col-span-3 reveal rounded-3xl border border-line bg-surface/60 p-8 sm:p-10 space-y-7">
+        <div class="grid sm:grid-cols-2 gap-7">
+          <div class="field">
+            <input type="text" id="name" name="name" placeholder=" " required class="peer w-full border-b border-line focus:border-accent outline-none py-2 text-slate-100" />
+            <label for="name" class="absolute left-0 top-2 text-slate-500">Name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" placeholder=" " required class="peer w-full border-b border-line focus:border-accent outline-none py-2 text-slate-100" />
+            <label for="email" class="absolute left-0 top-2 text-slate-500">Email</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <input type="text" id="subject" name="subject" placeholder=" " required class="peer w-full border-b border-line focus:border-accent outline-none py-2 text-slate-100" />
+          <label for="subject" class="absolute left-0 top-2 text-slate-500">Subject</label>
+        </div>
+
+        <div class="field">
+          <textarea id="message" name="message" rows="4" placeholder=" " required class="peer w-full border-b border-line focus:border-accent outline-none py-2 text-slate-100 resize-none"></textarea>
+          <label for="message" class="absolute left-0 top-2 text-slate-500">Message</label>
+        </div>
+
+        <button type="submit" class="submit-btn magnetic w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary to-accent px-8 py-3.5 text-sm font-semibold text-[#08080c] hover:opacity-90 transition-opacity disabled:opacity-60">
+          Send message
+        </button>
+        <p id="formMessage" class="hidden text-sm text-accent"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="border-t border-line/60">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <p>&copy; 2026 Jorge Mata. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="magnetic hover:text-accent transition-colors">GitHub</a>
+        <a href="#" class="magnetic hover:text-accent transition-colors">LinkedIn</a>
+        <a href="mailto:jorgecmata@gmail.com" class="magnetic hover:text-accent transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

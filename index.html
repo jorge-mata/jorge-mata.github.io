@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jorge Mata — Computer Science Graduate & Full-Stack Developer</title>
+  <meta name="description" content="Jorge Carlos Mata Pacheco is a Computer Science graduate from Tec de Monterrey building full-stack, cloud-based software solutions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-base text-slate-200 font-sans antialiased overflow-x-hidden">
+  <div id="loader"><span class="font-display text-2xl text-gradient">JM.</span></div>
+  <div class="grain"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Nav -->
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-base/70 border-b border-line/60">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="font-display text-xl font-semibold tracking-tight">Jorge<span class="text-gradient">Mata</span></a>
+
+      <nav id="navLinks" class="relative hidden md:flex items-center gap-10">
+        <a href="index.html" class="nav-link is-active relative text-sm font-medium text-slate-100">Home</a>
+        <a href="about.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">About</a>
+        <a href="portfolio.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">Work</a>
+        <a href="contact.html" class="nav-link relative text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors">Contact</a>
+        <span id="navIndicator" class="nav-indicator"></span>
+      </nav>
+
+      <a href="contact.html" class="snake-btn magnetic hidden md:inline-flex items-center rounded-full border border-line px-5 py-2 text-sm font-medium hover:border-accent/60 hover:text-accent transition-colors">
+        Let's talk
+      </a>
+
+      <button id="navToggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden text-slate-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <nav id="navMenu" class="hidden md:hidden flex-col gap-1 px-6 pb-6 bg-base/95 border-b border-line/60">
+      <a href="index.html" class="nav-link py-3 text-slate-100 border-b border-line/40">Home</a>
+      <a href="about.html" class="nav-link py-3 text-slate-400 border-b border-line/40">About</a>
+      <a href="portfolio.html" class="nav-link py-3 text-slate-400 border-b border-line/40">Work</a>
+      <a href="contact.html" class="nav-link py-3 text-slate-400">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="relative min-h-screen flex items-center overflow-hidden pt-28 pb-20">
+      <div class="light-ray"></div>
+      <div class="particle-field" data-particles="50"></div>
+
+      <div class="relative max-w-6xl mx-auto px-6 w-full grid lg:grid-cols-[1fr_auto] gap-16 items-center">
+        <div>
+          <p class="eyebrow text-sm font-medium tracking-widest uppercase text-accent mb-6">Hey, I'm Jorge 👋</p>
+          <h1 data-split class="font-display font-semibold text-5xl sm:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-slate-50">
+            I build software that solves real problems.
+          </h1>
+          <p class="mt-8 text-lg sm:text-xl text-slate-400 max-w-xl">
+            A <span data-role-rotator='["Computer Science graduate", "full-stack developer", "cloud & data enthusiast", "problem solver"]' class="text-slate-100 font-medium"></span> combining strong technical skills with innovative solutions across web, mobile, and cloud.
+          </p>
+
+          <div class="mt-10 flex flex-wrap items-center gap-4">
+            <a href="portfolio.html" class="magnetic inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-accent px-7 py-3 text-sm font-semibold text-[#08080c] hover:opacity-90 transition-opacity">
+              View my work
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <a href="contact.html" class="magnetic inline-flex items-center gap-2 rounded-full border border-line px-7 py-3 text-sm font-semibold text-slate-200 hover:border-accent/60 hover:text-accent transition-colors">
+              Get in touch
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden lg:block relative h-[30rem] w-60 marquee-vertical-mask">
+          <div class="marquee-track-vertical flex flex-col gap-8 text-xl font-display text-slate-500 text-right">
+            <span>Python</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>JavaScript</span>
+            <span>Oracle Cloud Infrastructure</span>
+            <span>SQL</span>
+            <span>Unity & Unreal Engine</span>
+            <span>Machine Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-slate-500 fade-in-view">
+        <span class="text-xs uppercase tracking-widest">Scroll</span>
+        <div class="scroll-progress relative h-16 w-1.5 rounded-full bg-line overflow-hidden">
+          <div class="scroll-progress-fill absolute bottom-0 left-0 w-full rounded-full bg-gradient-to-t from-primary to-accent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I do -->
+    <section class="max-w-6xl mx-auto px-6 py-28">
+      <p class="eyebrow text-sm font-medium tracking-widest uppercase text-accent mb-4">What I do</p>
+      <h2 class="reveal font-display text-3xl sm:text-4xl font-semibold text-slate-50 max-w-2xl">
+        Design-minded development, from first sketch to shipped product.
+      </h2>
+
+      <div class="reveal-stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+        <div class="tilt-card rounded-2xl border border-line bg-surface/60 p-8">
+          <div class="h-11 w-11 rounded-xl bg-primary/15 text-primary flex items-center justify-center mb-6">✦</div>
+          <h3 class="font-display text-xl font-semibold text-slate-50 mb-2">Full-Stack Development</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Web, mobile, and desktop applications built with Python, Java, C++, and JavaScript.</p>
+        </div>
+        <div class="tilt-card rounded-2xl border border-line bg-surface/60 p-8">
+          <div class="h-11 w-11 rounded-xl bg-accent/15 text-accent flex items-center justify-center mb-6">⌁</div>
+          <h3 class="font-display text-xl font-semibold text-slate-50 mb-2">Data Science & ML</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Machine learning models (SVM, Random Forest, XGBoost) and cloud data pipelines, visualized in interactive dashboards.</p>
+        </div>
+        <div class="tilt-card rounded-2xl border border-line bg-surface/60 p-8">
+          <div class="h-11 w-11 rounded-xl bg-primary/15 text-primary flex items-center justify-center mb-6">◎</div>
+          <h3 class="font-display text-xl font-semibold text-slate-50 mb-2">Interactive Simulations</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">3D simulations and gamified experiences built in Unity and Unreal Engine with C#.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected work preview -->
+    <section class="max-w-6xl mx-auto px-6 py-28">
+      <div class="flex items-end justify-between mb-14">
+        <div>
+          <p class="eyebrow text-sm font-medium tracking-widest uppercase text-accent mb-4">Selected work</p>
+          <h2 class="reveal font-display text-3xl sm:text-4xl font-semibold text-slate-50">A few things I've built.</h2>
+        </div>
+        <a href="portfolio.html" class="magnetic hidden sm:inline-flex text-sm font-medium text-slate-300 hover:text-accent transition-colors">View all →</a>
+      </div>
+
+      <div class="reveal-stagger grid md:grid-cols-3 gap-6">
+        <a href="portfolio.html" class="tilt-card group rounded-2xl border border-line bg-gradient-to-br from-primary/20 via-accent/10 to-surface p-8 h-64 flex flex-col justify-end">
+          <h3 class="font-display text-xl font-semibold text-slate-50">ML Model Evaluation Dashboard</h3>
+          <p class="text-sm text-slate-400 mt-1">Course Project · Data Science & AI</p>
+        </a>
+        <a href="portfolio.html" class="tilt-card group rounded-2xl border border-line bg-gradient-to-br from-primary/20 to-surface p-8 h-64 flex flex-col justify-end">
+          <h3 class="font-display text-xl font-semibold text-slate-50">Room Reservation App</h3>
+          <p class="text-sm text-slate-400 mt-1">Cámara Nacional de Comercio · Web App</p>
+        </a>
+        <a href="portfolio.html" class="tilt-card group rounded-2xl border border-line bg-gradient-to-br from-accent/20 to-surface p-8 h-64 flex flex-col justify-end">
+          <h3 class="font-display text-xl font-semibold text-slate-50">Car Behavior Simulation</h3>
+          <p class="text-sm text-slate-400 mt-1">Unity · 3D Modeling & C#</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-6xl mx-auto px-6 pb-28">
+      <div class="reveal relative overflow-hidden rounded-3xl border border-line bg-surface/60 px-8 py-16 sm:px-16 text-center">
+        <div class="blob w-72 h-72 bg-primary -top-16 left-1/4"></div>
+        <div class="blob w-72 h-72 bg-accent -bottom-16 right-1/4"></div>
+        <h2 class="relative font-display text-3xl sm:text-5xl font-semibold text-slate-50 max-w-2xl mx-auto">
+          Let's build something great together.
+        </h2>
+        <p class="relative mt-5 text-slate-400 max-w-lg mx-auto">Have a project in mind? I'm currently open to new collaborations.</p>
+        <a href="contact.html" class="magnetic relative inline-flex items-center gap-2 mt-9 rounded-full bg-gradient-to-r from-primary to-accent px-8 py-3.5 text-sm font-semibold text-[#08080c] hover:opacity-90 transition-opacity">
+          Start a conversation
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line/60">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <p>&copy; 2026 Jorge Mata. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="magnetic hover:text-accent transition-colors">GitHub</a>
+        <a href="#" class="magnetic hover:text-accent transition-colors">LinkedIn</a>
+        <a href="mailto:jorgecmata@gmail.com" class="magnetic hover:text-accent transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
