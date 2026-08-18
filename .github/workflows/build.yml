@@ -28,9 +28,3 @@ jobs:
 
       - name: Build CSS
         run: npm run build:css
-
-      - name: Upload build output
-        uses: actions/upload-artifact@v4
-        with:
-          name: css-build
-          path: css/style.css
