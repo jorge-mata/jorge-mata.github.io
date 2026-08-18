@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* Snake-like traveling border, driven by scroll via the --angle custom property */
+.snake-btn {
+  position: relative;
+  isolation: isolate;
+}
+.snake-btn::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(from var(--angle, 0deg), transparent 0%, transparent 74%, #c084fc 86%, #7c3aed 94%, transparent 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+body {
+  background-color: #08080c;
+  font-family: 'Inter', sans-serif;
+  cursor: none;
+}
+
+@media (max-width: 768px), (hover: none) {
+  body {
+    cursor: auto;
+  }
+}
+
+::selection {
+  background: #7c3aed;
+  color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #08080c;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#7c3aed, #c084fc);
+  border-radius: 999px;
+}
+
+/* Custom cursor */
+.cursor-dot,
+.cursor-ring {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 999px;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: #c084fc;
+}
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(139, 92, 246, 0.6);
+}
+@media (max-width: 768px), (hover: none) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}
+body.cursor-active .cursor-ring {
+  border-color: #c3aed;
+  background: rgba(34, 211, 238, 0.08);
+}
+
+/* Reveal animation targets (GSAP sets initial state via JS as well, this is a no-JS fallback) */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.no-js .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(90deg, #7c3aed, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Blob background shapes */
+.blob {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(90px);
+  opacity: 0.45;
+  will-change: transform;
+}
+
+/* Hero spotlight beam, evoking a light source from the top corner */
+.light-ray {
+  position: absolute;
+  top: -30%;
+  left: -20%;
+  width: 70%;
+  height: 150%;
+  background: conic-gradient(from 205deg at 0% 0%, rgba(251, 191, 36, 0.32), rgba(251, 191, 36, 0.05) 22%, transparent 40%);
+  filter: blur(30px);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Floating bokeh particle field */
+.particle-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.particle {
+  position: absolute;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.95), rgba(251, 191, 36, 0) 70%);
+  will-change: transform, opacity;
+}
+
+/* Vertical scroll-progress indicator (fills like a download bar) */
+.scroll-progress-fill {
+  height: 0%;
+  will-change: height;
+}
+
+/* Grain / noise overlay for texture */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Nav underline indicator */
+.nav-indicator {
+  position: absolute;
+  bottom: -4px;
+  height: 2px;
+  background: linear-gradient(90deg, #7c3aed, #c084fc);
+  border-radius: 999px;
+  width: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Project card tilt container */
+.tilt-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.tilt-card > * {
+  transform: translateZ(20px);
+}
+
+/* Marquee */
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+/* Vertical marquee (hero skills column) */
+.marquee-vertical-mask {
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+.marquee-track-vertical {
+  height: max-content;
+}
+
+/* Loader overlay */
+#loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: #08080c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Floating label form fields */
+.field {
+  position: relative;
+}
+.field input,
+.field textarea {
+  background: transparent;
+}
+.field label {
+  pointer-events: none;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.field input:focus + label,
+.field textarea:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field textarea:not(:placeholder-shown) + label {
+  transform: translateY(-1.4rem) scale(0.8);
+  color: #c084fc;
+}
+
+/* Skill bar */
+.skill-bar-fill {
+  width: 0%;
+}
+
+/* Portfolio filter active state */
+.filter-btn.is-active {
+  background: linear-gradient(90deg, #7c3aed, #c084fc);
+  color: #08080c;
+  border-color: transparent;
+}
+
+/* Utility: hide scrollbar for filter row on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
