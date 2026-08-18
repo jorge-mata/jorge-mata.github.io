@@ -235,6 +235,19 @@ body.cursor-active .cursor-ring {
   color: #c084fc;
 }
 
+/* Contact info blur until hovered */
+.contact-info {
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  filter: blur(6px);
+  opacity: 0.65;
+}
+
+.contact-info:hover,
+.contact-info:focus-within {
+  filter: blur(0);
+  opacity: 1;
+}
+
 /* Skill bar */
 .skill-bar-fill {
   width: 0%;
